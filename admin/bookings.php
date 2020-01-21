@@ -8,13 +8,16 @@ include("../includes/header2.php");
       <small>bookings</small>
     </h4>
     <ol class="breadcrumb">
-      <b> <?php echo date('D, jS F Y') ;?></b>
+      <b>
+        <?php echo date('D, jS M ') ;?>
+      </b>
     </ol>
   </section>
   <section class="content">
 
     <p>
-      <btn class="btn btn-info btn-sm" data-toggle="modal" data-target="#add_booking"><i class="fa fa-plus"> New</i>
+      <btn class="btn btn-info btn-sm" data-toggle="modal" data-target="#add_booking"><i class="fa fa-plus">
+          New</i>
       </btn>
       <a href="#" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-print"></i> Print</a>
     </p>

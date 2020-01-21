@@ -7,7 +7,7 @@ include("../includes/header.php");
       <b>Trips</b> <small>My bookings</small>
     </h4>
     <ol class="breadcrumb">
-      <b> <?php echo date('D, jS F Y') ;?></b>
+      <b> <?php echo date('D, jS M ') ;?></b>
     </ol>
   </section>
 
@@ -93,7 +93,6 @@ include("../includes/header.php");
       </div>
     </div>
 
-
     <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog">
       <div class="modal-dialog modal-md" role="document">
         <div class="modal-content modal-col-danger">
@@ -111,7 +110,6 @@ include("../includes/header.php");
         </div>
       </div>
     </div>
-
 
     <!-- Small Size -->
     <div class="modal fade" id="warningModal" tabindex="-1" role="dialog">
@@ -131,7 +129,7 @@ include("../includes/header.php");
     </div>
 
     <!-- bookings table -->
-    <div class="box box primary" style="padding:1%;">
+    <div class="panel panel-info" style="padding:1%;">
       <table id="example2" class="table table-bordered table-striped nowrap" style="width:100%">
         <thead>
           <tr>
@@ -222,8 +220,10 @@ $(document).ready(function() {
     }
   });
   $('#datepicker').datepicker({
-    minDate: new Date()
-  });
+    dateFormat: "yy-mm-dd",
+    maxDate: '+1m +10d',
+    minDate: -1
+  })
   $('#route').change(function() {
     var routeId = $(this).val();
     $('#bus_time').find('option').not(':first').remove();

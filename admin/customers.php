@@ -6,7 +6,7 @@
       <small>section</small>
     </h4>
     <ol class="breadcrumb">
-      <b> <?php echo date('D, jS F Y') ;?></b>
+      <b> <?php echo date('D, jS M ') ;?></b>
     </ol>
   </section>
 
@@ -40,7 +40,6 @@
                 <strong> Note !</strong> Data saving failed.
               </div>
               <div class="alert icon-alert with-arrow alert-light form-alter" role="alert" style="display:none;">
-
               </div>
 
               <div class="form-group row">

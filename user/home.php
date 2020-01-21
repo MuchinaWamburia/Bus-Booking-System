@@ -10,7 +10,7 @@ include("../includes/header.php");
       <small>self service</small>
     </h4>
     <ol class="breadcrumb">
-      <b> <?php echo date('D, jS F Y') ;?></b>
+      <b> <?php echo date('D, jS M ') ;?></b>
     </ol>
   </section>
   <!-- Main content -->

@@ -8,7 +8,7 @@ include("../includes/header2.php");
       <small>section</small>
     </h4>
     <ol class="breadcrumb">
-      <b> <?php echo date('D, jS F Y') ;?></b>
+      <b> <?php echo date('D, jS M ') ;?></b>
     </ol>
   </section>
   <section class="content">

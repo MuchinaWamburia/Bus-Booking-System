@@ -56,16 +56,20 @@
     <!-- AdminLTE for demo purposes -->
     <script src="../dist/js/demo.js"></script>
     <!-- <script src="../dist/js/pages/dashboard.js"></script> -->
+
     <script>
     $(document).ready(function() {
       $('.sidebar-menu').tree()
-    })
+    });
     $(document).ajaxStart(function() {
       Pace.restart()
-    })
+    });
+    $("body").addClass('loaded');
+
+    $(window).on('beforeunload', function() {
+      $('body').removeClass('loaded');
+    });
     </script>
-
-
     </body>
 
     </html>

@@ -8,7 +8,7 @@ include("../includes/header2.php");
       <small>section</small>
     </h4>
     <ol class="breadcrumb">
-      <b> <?php echo date('D, jS F Y') ;?></b>
+      <b> <?php echo date('D, jS M ') ;?></b>
     </ol>
   </section>
   <section class="content">
@@ -63,7 +63,8 @@ include("../includes/header2.php");
                 </div>
                 <div class="form-group col-xs-6">
                   <label for="Contact">Contact</label>
-                  <input type="text" id="contact" name="contact" class="form-control" />
+                  <input type="text" id="contact" name="contact" class="form-control"
+                    data-inputmask='"mask": "(999) 999-9999"' data-mask />
                 </div>
                 <div class="form-group col-xs-6">
                   <input type="hidden" id="driver_id" name="driver_id" class="form-control" />
@@ -159,7 +160,6 @@ include("../includes/header2.php");
   </section>
 </div>
 <?php  include("../includes/footer.php"); ?>
-
 
 <script>
 $(document).ready(function() {
